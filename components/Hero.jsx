@@ -181,15 +181,33 @@ export default function Hero() {
           className="hidden lg:flex items-center justify-center opacity-0 animate-fade-in animate-delay-600"
           style={{ animationFillMode: 'forwards' }}
         >
-          <img
-            src="/profile.jpg"
-            alt="Kunal Pramanik"
-            className="w-64 h-72 rounded-3xl object-cover"
-            style={{
-              border: '2px solid rgba(200,241,53,0.25)',
-              boxShadow: '0 0 60px rgba(200,241,53,0.1), 0 24px 48px rgba(0,0,0,0.4)',
-            }}
-          />
+          <div style={{ position: 'relative' }}>
+            <div style={{
+              position: 'absolute',
+              inset: '-4px',
+              borderRadius: '50%',
+              background: 'linear-gradient(135deg, #C8F135, #0BCCB5)',
+              padding: '3px',
+              zIndex: 0,
+            }} />
+            <div style={{
+              position: 'relative',
+              zIndex: 1,
+              borderRadius: '50%',
+              overflow: 'hidden',
+              width: '220px',
+              height: '220px',
+              border: '3px solid transparent',
+              backgroundClip: 'padding-box',
+              boxShadow: '0 0 40px rgba(200,241,53,0.25), 0 0 80px rgba(200,241,53,0.1)',
+            }}>
+              <img
+                src="/profile.jpg"
+                alt="Kunal Pramanik"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
+              />
+            </div>
+          </div>
         </div>
 
       </div>
