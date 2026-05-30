@@ -19,7 +19,7 @@ const projects = [
     description:
       'Full-stack computer vision platform using a Self-Calibrated Illumination (SCI) neural network. Novel SCI-Guided Adaptive Fusion pipeline — sub-2-second end-to-end processing. React frontend on Vercel, CPU-optimized PyTorch/FastAPI on Hugging Face.',
     stack: ['PyTorch', 'OpenCV', 'FastAPI', 'React', 'Hugging Face', 'Deep Learning'],
-    url: 'https://github.com/Kunal-Pramanik/IllumiRefine-AI',
+    url: 'https://illumi-refine-ai.vercel.app/',
     color: '#0BCCB5',
   },
   {
