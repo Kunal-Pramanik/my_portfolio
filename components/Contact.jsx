@@ -1,41 +1,49 @@
-import { useRef, useState, useEffect } from 'react'
+'use client';
+
+import React, { useRef, useState, useEffect } from 'react';
 
 export default function Contact() {
-  const ref = useRef(null)
-  const [vis, setVis] = useState(false)
-  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
-  const [status, setStatus] = useState('idle') // idle | sending | success | error
-  const [errors, setErrors] = useState({})
+  const ref = useRef(null);
+  const [vis, setVis] = useState(false);
+  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [errors, setErrors] = useState({});
 
   useEffect(() => {
     const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) { setVis(true); obs.disconnect() }
-    }, { threshold: 0.1 })
-    if (ref.current) obs.observe(ref.current)
-    return () => obs.disconnect()
-  }, [])
+      if (e.isIntersecting) {
+        setVis(true);
+        obs.disconnect();
+      }
+    }, { threshold: 0.1 });
+    
+    if (ref.current) obs.observe(ref.current);
+    return () => obs.disconnect();
+  }, []);
 
   const validate = () => {
-    const e = {}
-    if (!form.name.trim()) e.name = 'Name is required'
-    if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email)) e.email = 'Valid email required'
-    if (!form.message.trim() || form.message.trim().length < 10) e.message = 'Message must be at least 10 characters'
-    return e
-  }
+    const e = {};
+    if (!form.name.trim()) e.name = 'Name is required';
+    if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email)) e.email = 'Valid email required';
+    if (!form.message.trim() || form.message.trim().length < 10) e.message = 'Message must be at least 10 characters';
+    return e;
+  };
 
   const handleChange = (e) => {
-    setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
-    if (errors[e.target.name]) setErrors((er) => ({ ...er, [e.target.name]: '' }))
-  }
+    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+    if (errors[e.target.name]) setErrors((er) => ({ ...er, [e.target.name]: '' }));
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    const errs = validate()
-    if (Object.keys(errs).length) { setErrors(errs); return }
+    e.preventDefault();
+    const errs = validate();
+    if (Object.keys(errs).length) {
+      setErrors(errs);
+      return;
+    }
 
-    setStatus('sending')
+    setStatus('sending');
     try {
-      // Replace YOUR_FORM_ID with your Formspree form ID after signup at formspree.io
       const res = await fetch('https://formspree.io/f/mzdwwlqk', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
@@ -46,17 +54,17 @@ export default function Contact() {
           message: form.message,
           _subject: `Portfolio message from ${form.name}`,
         }),
-      })
+      });
       if (res.ok) {
-        setStatus('success')
-        setForm({ name: '', email: '', subject: '', message: '' })
+        setStatus('success');
+        setForm({ name: '', email: '', subject: '', message: '' });
       } else {
-        setStatus('error')
+        setStatus('error');
       }
     } catch {
-      setStatus('error')
+      setStatus('error');
     }
-  }
+  };
 
   return (
     <section id="contact" className="relative py-28 px-6">
@@ -67,6 +75,7 @@ export default function Contact() {
           background: 'radial-gradient(circle, #C8F135 0%, transparent 70%)',
           bottom: '10%',
           right: '15%',
+          position: 'absolute'
         }}
       />
 
@@ -165,7 +174,7 @@ export default function Contact() {
                       name="subject"
                       value={form.subject}
                       onChange={handleChange}
-                      placeholder="What's it about?"
+                      placeholder={"What's it about?"}
                       className="input-field w-full px-4 py-3 rounded-xl text-sm"
                     />
                   </div>
@@ -178,7 +187,7 @@ export default function Contact() {
                       name="message"
                       value={form.message}
                       onChange={handleChange}
-                      placeholder="Tell me what's on your mind..."
+                      placeholder={"Tell me what's on your mind..."}
                       rows={5}
                       className="input-field w-full px-4 py-3 rounded-xl text-sm resize-none"
                     />
@@ -302,5 +311,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }
