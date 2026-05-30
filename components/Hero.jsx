@@ -110,9 +110,10 @@ export default function Hero() {
             className="font-body text-base leading-relaxed mb-8 opacity-0 animate-fade-up animate-delay-300"
             style={{ color: '#8A8880', maxWidth: '520px', animationFillMode: 'forwards' }}
           >
-            M.Sc. Data Science student at DA-IICT, Gandhinagar. I transform
-            complex data into actionable products from RAG-powered AI chatbots
-            to computer vision pipelines and semantic search engines.
+            Results-driven MSc Data Science student with a focus on transforming complex data into actionable insights. From
+            building predictive risk models for financial forecasting to developing search-optimized web tools, I specialize in data-driven
+            problem solving and pattern recognition. Proficient in Python, SQL/PostgeSQL, and Tableau, with a strong commitment
+            to delivering scalable solutions and clear, visual storytelling through data.
           </p>
 
           <div
