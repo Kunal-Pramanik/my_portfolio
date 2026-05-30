@@ -149,7 +149,8 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-28 px-6">
-      <div className="max-w-6xl mx-auto">
+      {/* Reduced max-width slightly so standard single-column cards don't stretch too wide */}
+      <div className="max-w-4xl mx-auto"> 
         <div
           ref={headRef}
           className="mb-14 transition-all duration-700 overflow-visible"
@@ -166,13 +167,14 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {/* Changed from 'grid grid-cols-1 md:grid-cols-2' to 'flex flex-col' */}
+        <div className="flex flex-col gap-6">
           {projects.map((p, i) => (
             <ProjectCard key={p.id} project={p} index={i} />
           ))}
         </div>
 
-        <div className="mt-8 text-center">
+        <div className="mt-12 text-center">
           <a
             href="https://github.com/Kunal-Pramanik"
             target="_blank"
