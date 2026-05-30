@@ -85,7 +85,7 @@ function ProjectCard({ project, index }) {
             {project.tagline}
           </p>
         </div>
-        <a
+        
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
@@ -152,15 +152,15 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <div
           ref={headRef}
-          className="mb-14 transition-all duration-700"
-          style={{ opacity: headVis ? 1 : 0, transform: headVis ? 'none' : 'translateY(20px)' }}
+          className="mb-14 transition-all duration-700 overflow-visible"
+          style={{ opacity: headVis ? 1 : 0, transform: headVis ? 'none' : 'translateY(20px)', paddingBottom: '8px' }}
         >
           <p className="text-xs font-mono tracking-widest uppercase mb-3" style={{ color: '#C8F135' }}>
             / Projects
           </p>
-            <h2 className="font-display font-bold text-4xl md:text-5xl overflow-visible pb-2">
-              Things I&apos;ve built
-            </h2>
+          <h2 className="font-display font-bold text-4xl md:text-5xl overflow-visible pb-3 leading-[1.2]">
+            Things I&apos;ve built
+          </h2>
           <p className="mt-3 text-base" style={{ color: '#8A8880', maxWidth: '480px' }}>
             Production-grade AI and ML systems, from full-stack web apps to computer vision pipelines.
           </p>
@@ -173,7 +173,7 @@ export default function Projects() {
         </div>
 
         <div className="mt-8 text-center">
-          <a
+          
             href="https://github.com/Kunal-Pramanik"
             target="_blank"
             rel="noopener noreferrer"
