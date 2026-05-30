@@ -10,8 +10,7 @@ export default function Footer() {
       <p className="text-xs font-mono" style={{ color: '#5A5A64' }}>
         Kunal Pramanik · M.Sc. Data Science, DA-IICT · {new Date().getFullYear()}
       </p>
-      <p className="text-xs mt-3" style={{ color: '#3A3A44' }}>
-        Built with Next.js · Tailwind CSS · Deployed on Vercel
+      
       </p>
     </footer>
   )
