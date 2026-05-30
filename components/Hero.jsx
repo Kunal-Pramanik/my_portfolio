@@ -162,7 +162,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="mailto:202518001@dau.ac.in"
+              href="mailto:pramanikkunal65@gmail.com"
               className="flex items-center gap-2 text-sm transition-colors"
               style={{ color: '#8A8880' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = '#C8F135')}
