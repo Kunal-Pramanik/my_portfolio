@@ -180,7 +180,7 @@ export default function Hero() {
               LinkedIn
             </a>
             <a
-              href="mailto:202518001@dau.ac.in"
+              href="mailto:pramanikkunal65@gmail.com"
               className="flex items-center gap-2 text-sm transition-colors"
               style={{ color: '#8A8880' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = '#C8F135')}
@@ -194,49 +194,17 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: floating card */}
-        <div
-          className="hidden lg:flex flex-col gap-4 opacity-0 animate-fade-in animate-delay-600"
-          style={{ animationFillMode: 'forwards', width: '260px' }}
-        >
-          {/* Avatar card */}
-          <div className="card-glass rounded-2xl p-6 text-center animate-float">
-           <img
-              src="/profile.jpg"
-              alt="Kunal Pramanik"
-              className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
-              style={{ border: '2px solid rgba(200,241,53,0.3)' }}
-            />
-            <p className="font-display font-semibold text-base">Kunal Pramanik</p>
-            <p className="text-xs mt-1" style={{ color: '#8A8880' }}>M.Sc. Data Science</p>  
-            <p className="text-xs mt-0.5" style={{ color: '#8A8880' }}>DA-IICT, Gandhinagar</p>
-            <div
-              className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs"
-              style={{ background: 'rgba(200,241,53,0.08)', color: '#C8F135' }}
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-              Available
-            </div>
-          </div>
-
-          {/* Stats card */}
-          <div className="card-glass rounded-2xl p-4">
-            <p className="text-xs font-mono uppercase tracking-widest mb-3" style={{ color: '#8A8880' }}>At a glance</p>
-            <div className="space-y-3">
-              {[
-                { label: 'Projects', val: '4+' },
-                { label: 'GitHub repos', val: '7' },
-                { label: 'IBM Certified', val: '✓' },
-              ].map((s) => (
-                <div key={s.label} className="flex justify-between items-center">
-                  <span className="text-xs" style={{ color: '#8A8880' }}>{s.label}</span>
-                  <span className="text-sm font-display font-bold" style={{ color: '#C8F135' }}>{s.val}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="mb-8 opacity-0 animate-fade-up" style={{ animationFillMode: 'forwards' }}>
+          <img
+            src="/profile.jpg"
+            alt="Kunal Pramanik"
+            className="w-24 h-24 rounded-2xl object-cover"
+            style={{
+              border: '2px solid rgba(200,241,53,0.3)',
+              boxShadow: '0 0 32px rgba(200,241,53,0.12)',
+            }}
+          />
         </div>
-      </div>
 
       {/* Scroll indicator */}
       <div
