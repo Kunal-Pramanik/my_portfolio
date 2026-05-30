@@ -75,6 +75,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 flex flex-col lg:flex-row items-center gap-16">
+
         {/* Left: text */}
         <div className="flex-1">
           {/* Badge */}
@@ -151,7 +152,7 @@ export default function Hero() {
             className="flex items-center gap-6 opacity-0 animate-fade-up animate-delay-500"
             style={{ animationFillMode: 'forwards' }}
           >
-            <a
+            
               href="https://github.com/Kunal-Pramanik"
               target="_blank"
               rel="noopener noreferrer"
@@ -165,7 +166,7 @@ export default function Hero() {
               </svg>
               GitHub
             </a>
-            <a
+            
               href="https://www.linkedin.com/in/kunal-pramanik-5aa131267"
               target="_blank"
               rel="noopener noreferrer"
@@ -179,7 +180,7 @@ export default function Hero() {
               </svg>
               LinkedIn
             </a>
-            <a
+            
               href="mailto:202518001@dau.ac.in"
               className="flex items-center gap-2 text-sm transition-colors"
               style={{ color: '#8A8880' }}
@@ -193,18 +194,26 @@ export default function Hero() {
             </a>
           </div>
         </div>
+        {/* END left column */}
 
-        <div className="mb-8 opacity-0 animate-fade-up" style={{ animationFillMode: 'forwards' }}>
+        {/* Right: profile photo */}
+        <div
+          className="hidden lg:flex items-center justify-center opacity-0 animate-fade-in animate-delay-600"
+          style={{ animationFillMode: 'forwards' }}
+        >
           <img
             src="/profile.jpg"
             alt="Kunal Pramanik"
-            className="w-24 h-24 rounded-2xl object-cover"
+            className="w-64 h-72 rounded-3xl object-cover"
             style={{
-              border: '2px solid rgba(200,241,53,0.3)',
-              boxShadow: '0 0 32px rgba(200,241,53,0.12)',
+              border: '2px solid rgba(200,241,53,0.25)',
+              boxShadow: '0 0 60px rgba(200,241,53,0.1), 0 24px 48px rgba(0,0,0,0.4)',
             }}
           />
         </div>
+
+      </div>
+      {/* END flex row */}
 
       {/* Scroll indicator */}
       <div
@@ -217,6 +226,7 @@ export default function Hero() {
           style={{ background: 'linear-gradient(to bottom, #8A8880, transparent)' }}
         />
       </div>
+
     </section>
   )
 }
