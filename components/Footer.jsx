@@ -11,7 +11,7 @@ export default function Footer() {
         Kunal Pramanik · M.Sc. Data Science, DA-IICT · {new Date().getFullYear()}
       </p>
       
-      </p>
+      
     </footer>
   )
 }
