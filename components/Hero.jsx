@@ -78,6 +78,7 @@ export default function Hero() {
 
         {/* Left: text */}
         <div className="flex-1">
+
           {/* Badge */}
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 opacity-0 animate-fade-up"
@@ -166,6 +167,7 @@ export default function Hero() {
               </svg>
               GitHub
             </a>
+
             
               href="https://www.linkedin.com/in/kunal-pramanik-5aa131267"
               target="_blank"
@@ -180,6 +182,7 @@ export default function Hero() {
               </svg>
               LinkedIn
             </a>
+
             
               href="mailto:202518001@dau.ac.in"
               className="flex items-center gap-2 text-sm transition-colors"
@@ -193,6 +196,7 @@ export default function Hero() {
               Email
             </a>
           </div>
+
         </div>
         {/* END left column */}
 
