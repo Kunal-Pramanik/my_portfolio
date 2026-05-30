@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 
 const roles = [
   'Data Scientist',
-  'ML Engineer',
-  'Full-Stack Builder',
-  'LLM Engineer',
+  'Data Engineer',
+  'Business Analyst',
+  'Data Analyst',
 ]
 
 function TypeWriter({ words }) {
