@@ -239,8 +239,8 @@ export default function Contact() {
                   </svg>
                 ),
                 label: 'Email',
-                value: '202518001@dau.ac.in',
-                href: 'mailto:202518001@dau.ac.in',
+                value: 'pramanikkunal65@gmail.com',
+                href: 'mailto:pramanikkunal65@gmail.com',
               },
               {
                 icon: (
