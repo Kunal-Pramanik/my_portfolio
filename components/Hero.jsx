@@ -46,7 +46,6 @@ export default function Hero() {
       id="about"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background orbs */}
       <div
         className="gradient-orb w-96 h-96 opacity-20"
         style={{
@@ -64,7 +63,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Grid lines decorative */}
       <div
         className="absolute inset-0 opacity-5"
         style={{
@@ -76,10 +74,8 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 flex flex-col lg:flex-row items-center gap-16">
 
-        {/* Left: text */}
         <div className="flex-1">
 
-          {/* Badge */}
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 opacity-0 animate-fade-up"
             style={{
@@ -88,32 +84,21 @@ export default function Hero() {
               animationFillMode: 'forwards',
             }}
           >
-            <span
-              className="w-2 h-2 rounded-full animate-pulse"
-              style={{ background: '#C8F135' }}
-            />
-            <span
-              className="text-xs font-mono tracking-widest uppercase"
-              style={{ color: '#C8F135' }}
-            >
+            <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: '#C8F135' }} />
+            <span className="text-xs font-mono tracking-widest uppercase" style={{ color: '#C8F135' }}>
               Open to opportunities
             </span>
           </div>
 
-          {/* Name */}
           <h1
             className="font-display font-bold leading-[1.05] mb-4 opacity-0 animate-fade-up animate-delay-100"
-            style={{
-              fontSize: 'clamp(2.8rem, 6vw, 5rem)',
-              animationFillMode: 'forwards',
-            }}
+            style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)', animationFillMode: 'forwards' }}
           >
             Kunal
             <br />
             <span className="text-gradient">Pramanik</span>
           </h1>
 
-          {/* Typewriter */}
           <p
             className="font-display text-2xl font-semibold mb-6 opacity-0 animate-fade-up animate-delay-200"
             style={{ animationFillMode: 'forwards', minHeight: '2rem' }}
@@ -121,21 +106,15 @@ export default function Hero() {
             <TypeWriter words={roles} />
           </p>
 
-          {/* Summary */}
           <p
             className="font-body text-base leading-relaxed mb-8 opacity-0 animate-fade-up animate-delay-300"
-            style={{
-              color: '#8A8880',
-              maxWidth: '520px',
-              animationFillMode: 'forwards',
-            }}
+            style={{ color: '#8A8880', maxWidth: '520px', animationFillMode: 'forwards' }}
           >
             M.Sc. Data Science student at DA-IICT, Gandhinagar. I transform
-            complex data into actionable products — from RAG-powered AI chatbots
+            complex data into actionable products from RAG-powered AI chatbots
             to computer vision pipelines and semantic search engines.
           </p>
 
-          {/* CTAs */}
           <div
             className="flex flex-wrap gap-3 mb-10 opacity-0 animate-fade-up animate-delay-400"
             style={{ animationFillMode: 'forwards' }}
@@ -148,12 +127,11 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Social links */}
           <div
             className="flex items-center gap-6 opacity-0 animate-fade-up animate-delay-500"
             style={{ animationFillMode: 'forwards' }}
           >
-            
+            <a
               href="https://github.com/Kunal-Pramanik"
               target="_blank"
               rel="noopener noreferrer"
@@ -168,7 +146,7 @@ export default function Hero() {
               GitHub
             </a>
 
-            
+            <a
               href="https://www.linkedin.com/in/kunal-pramanik-5aa131267"
               target="_blank"
               rel="noopener noreferrer"
@@ -183,7 +161,7 @@ export default function Hero() {
               LinkedIn
             </a>
 
-            
+            <a
               href="mailto:202518001@dau.ac.in"
               className="flex items-center gap-2 text-sm transition-colors"
               style={{ color: '#8A8880' }}
@@ -196,9 +174,9 @@ export default function Hero() {
               Email
             </a>
           </div>
-        {/* END left column */}
 
-        {/* Right: profile photo */}
+        </div>
+
         <div
           className="hidden lg:flex items-center justify-center opacity-0 animate-fade-in animate-delay-600"
           style={{ animationFillMode: 'forwards' }}
@@ -215,9 +193,7 @@ export default function Hero() {
         </div>
 
       </div>
-      {/* END flex row */}
 
-      {/* Scroll indicator */}
       <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 animate-fade-in animate-delay-800"
         style={{ animationFillMode: 'forwards' }}
