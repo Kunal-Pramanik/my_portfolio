@@ -296,7 +296,7 @@ export default function Contact() {
                 color: '#8A8880',
               }}
             >
-              <span style={{ color: '#C8F135' }}>✦ Powered by Formspree</span> — messages are stored and I get notified by email instantly.
+              <span style={{ color: '#C8F135' }}>✦ Connect with me </span> — &  build innovative solutions and drive impactful projects together.
             </div>
           </div>
         </div>
