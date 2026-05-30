@@ -29,7 +29,7 @@ const projects = [
     description:
       'End-to-end faculty discovery engine at DA-IICT. Custom BDE pipeline with BS4/FastAPI, 384-dimensional MiniLM vector embeddings for semantic similarity, Next.js 14 dashboard, FastAPI backend on Render, SQLite vector storage.',
     stack: ['NLP', 'MiniLM', 'FastAPI', 'Next.js 14', 'SQLite', 'Web Scraping'],
-    url: 'https://github.com/Kunal-Pramanik/Connect2Faculty',
+    url: 'https://faculty-connect-data-riders-pi.vercel.app/',
     color: '#A78BFA',
   },
   {
