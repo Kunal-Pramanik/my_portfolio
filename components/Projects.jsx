@@ -158,9 +158,9 @@ export default function Projects() {
           <p className="text-xs font-mono tracking-widest uppercase mb-3" style={{ color: '#C8F135' }}>
             / Projects
           </p>
-          <h2 className="font-display font-bold text-4xl md:text-5xl">
-            Things I&apos;ve built
-          </h2>
+            <h2 className="font-display font-bold text-4xl md:text-5xl overflow-visible pb-2">
+              Things I&apos;ve built
+            </h2>
           <p className="mt-3 text-base" style={{ color: '#8A8880', maxWidth: '480px' }}>
             Production-grade AI and ML systems, from full-stack web apps to computer vision pipelines.
           </p>
