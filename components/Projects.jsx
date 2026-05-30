@@ -85,7 +85,7 @@ function ProjectCard({ project, index }) {
             {project.tagline}
           </p>
         </div>
-        
+        <a
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
@@ -173,7 +173,7 @@ export default function Projects() {
         </div>
 
         <div className="mt-8 text-center">
-          
+          <a
             href="https://github.com/Kunal-Pramanik"
             target="_blank"
             rel="noopener noreferrer"
