@@ -196,8 +196,6 @@ export default function Hero() {
               Email
             </a>
           </div>
-
-        </div>
         {/* END left column */}
 
         {/* Right: profile photo */}
