@@ -180,7 +180,7 @@ export default function Hero() {
               LinkedIn
             </a>
             <a
-              href="mailto:pramanikkunal65@gmail.com"
+              href="mailto:202518001@dau.ac.in"
               className="flex items-center gap-2 text-sm transition-colors"
               style={{ color: '#8A8880' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = '#C8F135')}
