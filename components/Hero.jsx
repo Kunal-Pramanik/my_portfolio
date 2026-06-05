@@ -91,7 +91,7 @@ export default function Hero() {
           </div>
 
           <h1
-            className="font-display font-bold leading-[1.05] mb-4 opacity-0 animate-fade-up animate-delay-100"
+            className="font-display font-bold leading-[1.3] mb-4 opacity-0 animate-fade-up animate-delay-100 overflow-visible pb-2"
             style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)', animationFillMode: 'forwards' }}
           >
             Kunal
@@ -100,8 +100,8 @@ export default function Hero() {
           </h1>
 
           <p
-            className="font-display text-2xl font-semibold mb-6 opacity-0 animate-fade-up animate-delay-200"
-            style={{ animationFillMode: 'forwards', minHeight: '2rem' }}
+            className="font-display text-2xl font-semibold mb-6 opacity-0 animate-fade-up animate-delay-200 leading-[1.3] overflow-visible"
+            style={{ animationFillMode: 'forwards', minHeight: '2.5rem' }}
           >
             <TypeWriter words={roles} />
           </p>
@@ -112,7 +112,7 @@ export default function Hero() {
           >
             Results-driven MSc Data Science student with a focus on transforming complex data into actionable insights. From
             building predictive risk models for financial forecasting to developing search-optimized web tools, I specialize in data-driven
-            problem solving and pattern recognition. Proficient in Python, SQL/PostgeSQL, and Tableau, with a strong commitment
+            problem solving and pattern recognition. Proficient in Python, SQL/PostgreSQL, and Tableau, with a strong commitment
             to delivering scalable solutions and clear, visual storytelling through data.
           </p>
 
@@ -126,13 +126,23 @@ export default function Hero() {
             <a href="#contact" className="btn-ghost px-6 py-2.5 rounded-full text-sm">
               Get in Touch
             </a>
+            
+              href="/resume.pdf"
+              download="Kunal_Pramanik_Resume.pdf"
+              className="btn-ghost px-6 py-2.5 rounded-full text-sm flex items-center gap-2"
+            >
+              <svg width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              Resume
+            </a>
           </div>
 
           <div
             className="flex items-center gap-6 opacity-0 animate-fade-up animate-delay-500"
             style={{ animationFillMode: 'forwards' }}
           >
-            <a
+            
               href="https://github.com/Kunal-Pramanik"
               target="_blank"
               rel="noopener noreferrer"
@@ -147,7 +157,7 @@ export default function Hero() {
               GitHub
             </a>
 
-            <a
+            
               href="https://www.linkedin.com/in/kunal-pramanik-5aa131267"
               target="_blank"
               rel="noopener noreferrer"
@@ -162,7 +172,7 @@ export default function Hero() {
               LinkedIn
             </a>
 
-            <a
+            
               href="mailto:pramanikkunal65@gmail.com"
               className="flex items-center gap-2 text-sm transition-colors"
               style={{ color: '#8A8880' }}
