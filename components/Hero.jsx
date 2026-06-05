@@ -126,7 +126,7 @@ export default function Hero() {
             <a href="#contact" className="btn-ghost px-6 py-2.5 rounded-full text-sm">
               Get in Touch
             </a>
-            
+            <a 
               href="/resume.pdf"
               download="Kunal_Pramanik_Resume.pdf"
               className="btn-ghost px-6 py-2.5 rounded-full text-sm flex items-center gap-2"
@@ -142,7 +142,7 @@ export default function Hero() {
             className="flex items-center gap-6 opacity-0 animate-fade-up animate-delay-500"
             style={{ animationFillMode: 'forwards' }}
           >
-            
+            <a 
               href="https://github.com/Kunal-Pramanik"
               target="_blank"
               rel="noopener noreferrer"
@@ -157,7 +157,7 @@ export default function Hero() {
               GitHub
             </a>
 
-            
+            <a 
               href="https://www.linkedin.com/in/kunal-pramanik-5aa131267"
               target="_blank"
               rel="noopener noreferrer"
@@ -172,7 +172,7 @@ export default function Hero() {
               LinkedIn
             </a>
 
-            
+            <a 
               href="mailto:pramanikkunal65@gmail.com"
               className="flex items-center gap-2 text-sm transition-colors"
               style={{ color: '#8A8880' }}
