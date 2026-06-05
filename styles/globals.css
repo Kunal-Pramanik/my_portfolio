@@ -10,6 +10,12 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
+/* Fix for font descender clipping */
+.font-display, h1, h2, h3 {  
+  line-height: 1.3;  
+  overflow: visible;
+}
+
 * {
   box-sizing: border-box;
 }
