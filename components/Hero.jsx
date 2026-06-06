@@ -189,7 +189,7 @@ export default function Hero() {
         </div>
 
         <div
-            className="flex items-center justify-center opacity-0 animate-fade-in animate-delay-600"
+            className="flex order-first lg:order-last items-center justify-center opacity-0 animate-fade-in animate-delay-600 mb-8 lg:mb-0"
             style={{ animationFillMode: 'forwards' }}
           >
           <div style={{ position: 'relative' }}>
