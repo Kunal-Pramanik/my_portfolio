@@ -189,9 +189,9 @@ export default function Hero() {
         </div>
 
         <div
-          className="hidden lg:flex items-center justify-center opacity-0 animate-fade-in animate-delay-600"
-          style={{ animationFillMode: 'forwards' }}
-        >
+            className="flex items-center justify-center opacity-0 animate-fade-in animate-delay-600"
+            style={{ animationFillMode: 'forwards' }}
+          >
           <div style={{ position: 'relative' }}>
             <div style={{
               position: 'absolute',
