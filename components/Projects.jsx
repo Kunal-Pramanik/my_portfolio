@@ -8,7 +8,7 @@ const projects = [
     description:
       'Production-grade RAG-powered chatbot combining FAISS vector search, real-time web search via Serper API, JWT auth with Supabase, persistent Firebase chat history, and topic-aware guardrails. Streaming Next.js frontend with source citation cards.',
     stack: ['Groq LLaMA 3', 'RAG', 'FAISS', 'Supabase', 'Firebase', 'Next.js', 'Vector Embeddings'],
-    url: 'https://github.com/Kunal-Pramanik/Sarkari_yojana_ai',
+    url: 'https://github.com/Kunal-Pramanik/Sarkari_Yojana.git',
     highlight: true,
     color: '#C8F135',
   },
